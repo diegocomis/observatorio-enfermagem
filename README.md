@@ -70,13 +70,14 @@ Gere a key do projeto Laravel
 ```sh
 ./vendor/bin/sail php artisan key:generate
 ```
-Se precisar - execute o comando
-```sh
-./vendor/bin/sail npm run dev
-```
 
 ### Acesse o projeto
 1. Link acesso - [http://localhost](http://localhost)
+
+Se ou somente se precisar - execute o comando
+```sh
+./vendor/bin/sail npm run dev
+```
 
 ## License
 
