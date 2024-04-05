@@ -34,6 +34,15 @@ Crie o Arquivo .env
 ```sh
 cp .env.example .env
 ```
+Como o projeto foi feito usando Laravel Sail é necessário executar via terminal WSL2 (Linux) no PHPStorm ou VSCode 
+```sh
+docker run --rm \
+    -u "$(id -u):$(id -g)" \
+    -v "$(pwd):/var/www/html" \
+    -w /var/www/html \
+    laravelsail/php83-composer:latest \
+    composer install --ignore-platform-reqs
+```
 Suba os containers do projeto - Utilizamos Laravel Sail p/ Docker
 ```sh
 ./vendor/bin/sail up -d
@@ -45,6 +54,10 @@ Se precisar instale o pacote NPM
 Execute o build para ajustar alterações
 ```sh
 ./vendor/bin/sail npm build
+```
+Execute o comando
+```sh
+./vendor/bin/sail npm run dev
 ```
 Gere o banco de dados do projeto
 ```sh
