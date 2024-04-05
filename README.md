@@ -30,6 +30,11 @@ Clone Repositório
 ```sh
 git clone -b https://github.com/diegocomis/observatorio-enfermagem.git
 ```
+No terminal, esteja na pasta raiz do projeto:
+```sh
+cd observatorio-enfermagem/
+```
+
 Crie o Arquivo .env
 ```sh
 cp .env.example .env
@@ -53,24 +58,25 @@ Se precisar instale o pacote NPM
 ```
 Execute o build para ajustar alterações
 ```sh
-./vendor/bin/sail npm build
+./vendor/bin/sail npm run build
 ```
-Execute o comando
-```sh
-./vendor/bin/sail npm run dev
-```
+
 Gere o banco de dados do projeto
 ```sh
 ./vendor/bin/sail php artisan migrate
 ```
+
 Gere a key do projeto Laravel
 ```sh
 ./vendor/bin/sail php artisan key:generate
 ```
+Se precisar - execute o comando
+```sh
+./vendor/bin/sail npm run dev
+```
 
 ### Acesse o projeto
 1. Link acesso - [http://localhost](http://localhost)
-2. Link EasyPanel (Gerenciador CRUD) - [http://localhost/admin](http://localhost/admin)
 
 ## License
 
