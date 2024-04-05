@@ -74,6 +74,12 @@ Gere a key do projeto Laravel
 ### Acesse o projeto
 1. Link acesso - [http://localhost](http://localhost)
 
+- Os passos, os comandos anteriores só devem ser executados na primeira que é baixado o sistema do git, após isso basta subir o docker com o comando SAIL UP, p finalizar SAIL STOP.
+- Depois basta acessar o Link de acesso acima.
+```sh
+./vendor/bin/sail up -d
+```
+
 Se ou somente se precisar - execute o comando
 ```sh
 ./vendor/bin/sail npm run dev
